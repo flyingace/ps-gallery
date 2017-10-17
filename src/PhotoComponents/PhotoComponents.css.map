@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,aAAc;EACZ,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EACnB,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,aAAa;;AAMhC,gBAAiB;EACf,KAAK,EAAE,KAAK;EAEZ,6BAAa;IACX,KAAK,EAAE,KAAK",
+"sources": ["PhotoComponents.scss"],
+"names": [],
+"file": "PhotoComponents.css"
+}

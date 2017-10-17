@@ -1,0 +1,21 @@
+//PhotoViewer Styles
+.photo-viewer {
+  width: 800px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+
+//PhotoContainer Styles
+.photo-container {
+  width: 350px;
+
+  .photo-image {
+    width: 350px;
+  }
+}
+
+
