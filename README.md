@@ -2,6 +2,8 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+I had some difficulty hosting this on GitHub pages so I have hosted it on my own server and it can be viewed [here](http://www.davidcameron.biz/ps-gallery).
+
 I have also added [moment.js](https://momentjs.com/) and [lo-dash](https://lodash.com/).
 
 Sorting by Date and by Active status are currently both working as is filtering by Tag, Source or Org.
