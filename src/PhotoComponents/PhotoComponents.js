@@ -20,7 +20,7 @@ export const PhotoContainer = (props) => {
             <p className='photo-description'>{props.description}</p>
             <p className='photo-tag'>{props.tag}</p>
             <p className='photo-date'>{props.date}</p>
-            <p>{props.active}</p>
+            <p className='photo-isActive'>Is Active?: {props.active}</p>
         </div>
     )
 };

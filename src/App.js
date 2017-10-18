@@ -111,7 +111,7 @@ class App extends Component {
         this.setState({ 'filters': newFilters }, this.filterData);
     };
 
-    mutateData = (evt) => {
+    handleChange = (evt) => {
         const target = evt.target;
         if (target.id === 'date' || target.id === 'active') {
             this.setState({ 'sortedBy': target.id, 'start': 0 }, this.sortData);
@@ -130,7 +130,7 @@ class App extends Component {
         const filteredData = this.state.mutableData.filter((photoData) => {
             return (
                 this.filterByCriteria('tag', photoData, tagValue) &&
-                this.filterByCriteria('status', photoData, sourceValue) &&
+                this.filterByCriteria('source', photoData, sourceValue) &&
                 this.filterByCriteria('org', photoData, orgValue)
             )
         });
@@ -155,11 +155,11 @@ class App extends Component {
                 </div>
                 <div className='controls'>
                     <div className='sorting-options'>
-                        <div className='button' id='date' onClick={this.mutateData}>Date</div>
-                        <div className='button' id='active' onClick={this.mutateData}>Active</div>
+                        <div className='button' id='date' onClick={this.handleChange}>Date</div>
+                        <div className='button' id='active' onClick={this.handleChange}>Active</div>
                     </div>
                     <div className='filtering-options'>
-                        <select name="tag" id="tag" onChange={this.mutateData}>
+                        <select name="tag" id="tag" onChange={this.handleChange}>
                             <option value=''>Filter By Tag</option>
                             <option value='food'>food</option>
                             <option value='simpsons'>simpsons</option>
@@ -170,14 +170,14 @@ class App extends Component {
                             <option value='SNL'>SNL</option>
                             <option value='cats|tacos'>cats|tacos</option>
                         </select>
-                        <select name="source" id="source" onChange={this.mutateData}>
+                        <select name="source" id="source" onChange={this.handleChange}>
                             <option value=''>Filter By Source</option>
                             <option value='ftp'>ftp</option>
                             <option value='web'>web</option>
                             <option value='dtu'>dtu</option>
                             <option value='photomechanic'>photomechanic</option>
                         </select>
-                        <select name="org" id="org" onChange={this.mutateData}>
+                        <select name="org" id="org" onChange={this.handleChange}>
                             <option value=''>Filter By Org</option>
                             <option value='ZCRVFR0ARO'>ZCRVFR0ARO</option>
                             <option value='P6ENNB2RNO'>P6ENNB2RNO</option>
