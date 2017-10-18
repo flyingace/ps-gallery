@@ -7,7 +7,7 @@
 /coverage
 
 # production
-/docs
+#/docs
 
 # misc
 .DS_Store
