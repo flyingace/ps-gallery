@@ -18,7 +18,7 @@ class App extends Component {
 
 
     componentDidMount() {
-        fetch('http://gsx2json.com/api?id=1wZa0Gx2yAFDyMVayzRn428SDXCOJHOL-0_IX9uLiWW0')
+        fetch('https://gsx2json.com/api?id=1wZa0Gx2yAFDyMVayzRn428SDXCOJHOL-0_IX9uLiWW0')
             .then((response) => {
                 return response.json()
             })
